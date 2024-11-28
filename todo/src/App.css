@@ -1,0 +1,21 @@
+
+form{
+  display: flex;
+  gap: 2rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: auto;
+  width: 400px;
+  margin-top: 1rem;
+}
+form > input{
+  padding: .7rem 1 rem;
+  border-radius: 4px;
+  width: 100px;
+}
+form> button{
+  color: #fff;
+  background: rgb(60, 20, 244);
+  border-radius: .5rem;
+}
