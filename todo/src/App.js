@@ -16,6 +16,16 @@ function App() {
     }
     setValue("")
   }
+  function handleDelete(index){
+    console.log({index})
+    let tempArr = []
+    for(let i=0; i < list.length; i++){
+      if (index !==i){
+        tempArr.push(list[i]);
+      }
+    }
+    setList(tempArr)
+  }
   console.log({list})
   return (
     <div className="App">
@@ -27,9 +37,9 @@ function App() {
         list.map((item, index)=>{
           return <li key={index}>
             <span>{item}</span>
-            <button>Delete</button>
+            <button onClick={()=>handleDelete(index)}>Delete</button>
           </li>
-
+        
         })}
       </ul>
     </div>
